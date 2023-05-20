@@ -20,6 +20,9 @@
                     <button class="btn btn-danger" (click)="removeItem(product.id)">
                         Xóa
                     </button>
+                    <a routerLink="/admin/product/{{ product.id }}/edit"
+                        >Cập nhật</a
+                    >
                 </td>
             </tr>
         </tbody>

@@ -23,5 +23,6 @@ export class ProductListComponent{
     }
     removeItem(id: any) {
         // this.onRemove.emit(id)
+        this.products = this.products.filter(item => item.id !== id)
     }
 }

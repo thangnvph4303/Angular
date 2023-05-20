@@ -2,23 +2,26 @@
   "products": [
     {
       "id": 1,
-      "name": "Product A",
+      "name": "Product B",
       "price": 200,
       "img": "https://picsum.photos/200/200"
     },
-
     {
       "id": 2,
       "name": "Product B",
       "price": 200,
       "img": "https://picsum.photos/200/200"
     },
-
     {
       "id": 3,
       "name": "Product C",
       "price": 200,
       "img": "https://picsum.photos/200/200"
+    },
+    {
+      "name": "Thắng Update",
+      "price": 500,
+      "id": 4
     }
   ]
 }
