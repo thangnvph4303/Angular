@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProduct } from './interfaces/Product';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'agl-WE17302';
+  products: IProduct[] = [
+    { id: 1, name: "Sản phẩm A", price: 200, img: "Ảnh"},
+    { id: 2, name: "Sản phẩm B", price: 300, img: "Ảnh"}
+  ]
+
+  onHandleRemove(id: any){
+    this.products = this.products.filter(item => item.id !== id)
+  }
+
 }
